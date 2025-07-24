@@ -28,20 +28,24 @@
 </head>
 <body class="bg-gray-900 text-white flex flex-col min-h-screen">
 
-  <!-- Konten utama -->
   <main class="flex-grow flex justify-center items-start pt-20">
     <div class="w-full max-w-xs">
       <form id="loginForm" class="bg-gray-800 rounded px-8 pt-6 pb-8">
         <h2 class="text-center text-2xl font-bold mb-6">orang pusing</h2>
 
         <div class="mb-4">
-          <input
-            id="loginEmail"
-            type="email"
-            placeholder="Email"
-            class="rounded w-full py-2 px-3 bg-gray-700 text-white outline-none focus:ring-0"
-            required
-          />
+       <input
+  id="loginEmail"
+  type="email"
+  name="email"
+  placeholder="Email"
+  class="rounded w-full py-2 px-3 bg-gray-700 text-white outline-none focus:ring-0"
+  autocomplete="off"
+  autocorrect="off"
+  autocapitalize="none"
+  spellcheck="false"
+  required
+/>
         </div>
 
         <div class="mb-6">
