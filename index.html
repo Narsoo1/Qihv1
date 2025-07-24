@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const mode = params.get("mode");
+      const oobCode = params.get("oobCode");
+
+      if (mode === "verifyEmail" && oobCode) {
+        window.location.href = `/verivikasi.html?mode=${mode}&oobCode=${oobCode}`;
+      } else {
+        window.location.href = "intro.html";
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+    </noscript>
+  </body>
+</html>
